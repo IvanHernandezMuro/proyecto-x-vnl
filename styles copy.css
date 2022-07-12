@@ -1,0 +1,216 @@
+/*h1,*/
+h2,
+h3,
+h4,
+h5, 
+button, 
+
+/** LOGO HERBALIFE */ 
+.navbar {
+    z-index: 100;
+}
+/** MENÚ */
+.navbar li {
+    display: flex;
+    position: fixed;
+    background-color: #0cf04969;
+    height: auto;
+    width: 100vw;
+    align-items: stretch;
+    padding: 15px;
+    transition: all 0.5s ease;
+    margin-top: 0.5px;
+    } 
+
+@media (min-width: 768px) {
+    .menu {
+        flex-direction: row;
+        justify-content: space-between;
+        display: flex;
+        
+        }
+}
+
+/*** EFECTOS navbar-nav BOTON HAMBURGUESA ***/
+.navbar-nav {
+    list-style: none;
+    display:flex;
+    font-size: 35px;
+    font-weight: 100;
+    
+}
+.navbar-nav a {
+    border-radius: 3px;
+    list-style: none;
+    margin: 0 5px;
+      }
+
+/*! Item normal*/
+.navbar-nav a {
+    padding: 7px 13px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 25px;
+    display: block;
+    font-weight: bold;
+    }
+
+/*! Item cuando le pasas el mause */
+
+.nav-link a :hover{
+    background-color: #f8760c;
+    padding: 5px 10px;
+    color: #ee0909;
+    border-radius: 15px;
+}
+
+.btn_menu  {
+    margin-right: 30px;
+    font-size: 35px;
+    color: #f36f01;
+    cursor: pointer;
+    display: none;
+}
+
+ul.show {
+    top: 30px;
+    
+}
+
+.show {
+    transform: translate(0);
+
+}
+
+
+
+
+#ribbon {
+    background-color: rgb(11, 11, 11);
+    z-index: -100;
+}
+
+#ribbon::after {
+    content: '';
+    background-color: transparent;
+    display: block;
+    height: 20px;
+    width: 50%;
+    margin: 0 auto;
+    position: relative;
+    left: auto;
+    margin-top: -40px;
+
+}
+
+#separator-ribbon {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+}
+
+#separator-ribbon .content {
+    width: 150%;
+    height: 150px;
+    margin-left: -25%;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+#highlighted {
+    background-color: transparent;
+    position: relative;
+    margin-top: -20px;
+    z-index: 10;
+    /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);*/
+}
+
+#highlighted img {
+    position: relative;
+    margin-top: -70px;
+}
+
+#outstanding {
+    background: rgb(255, 255, 255);
+    background: url(../img/bg-02.png), linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgb(161, 255, 99) 57%);
+    background-repeat: repeat-x;
+    background-size: 75%;
+    margin-top: -20px;
+}
+
+.card-border {
+    border: solid 10px white;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all ease-out 0.2s;
+}
+
+.card-border:hover {
+    transform: scale(1.05);
+}
+
+.text-shadow {
+    text-shadow: 0 3px 3px rgba(0, 0, 0, 0.6);
+}
+
+#separator-herbas {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    z-index: -200;
+}
+
+#separator-herbas .content {
+    background-color: black;
+    width: 110%;
+    height: 100px;
+    margin-left: -5%;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+}
+
+
+#herbas {
+    background: url(/img/banner-herbalife.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom center, center center;
+    background-size: 100%, auto;
+    
+}
+
+.herba-name {
+    font-family: 'Bitter', serif;
+}
+
+.herba {
+    cursor: pointer;
+    transition: all ease-out 0.2s;
+    
+}
+
+.herba:hover {
+    transform: scale(1.05);
+}
+
+.herba-name {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    display: inline-block;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 15px;
+   
+}
+
+#play {
+    background: url(../img2/bg-04.png);
+    background-color: rgb(255, 255, 219);
+    background-size: 40px 40px;
+}
+
+#footer {
+    background: url(../img2/bg-04.png);
+    background-color: rgb(224, 144, 24);
+    background-size: 50px 50px;
+}

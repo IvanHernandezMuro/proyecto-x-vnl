@@ -1,5 +1,5 @@
 /*h1,*/
-h2,
+/*h2,
 h3,
 h4,
 h5, 
@@ -9,6 +9,7 @@ button,
 .navbar{
     z-index: 100;
 }
+
 /** MENÚ */
 .navbar {
     display: flex;
@@ -27,16 +28,16 @@ button,
         flex-direction: row;
         justify-content: space-between;
         display: flex;
-    }
+        }
 }
 
 /*** EFECTOS navbar-nav BOTON HAMBURGUESA ***/
 .navbar-nav {
     list-style: none;
     display: flex;
-    font-size: 25px;
+    font-size: 5px;
     color: white;
-    font-weight: 100;
+    
 }
 .navbar-nav li {
     border-radius: 3px;
@@ -70,7 +71,7 @@ button,
 
 .btn_menu {
     margin-right: 30px;
-    font-size: 35px;
+    font-size: 25px;
     color: #f36f01;
     cursor: pointer;
     display: none;
@@ -83,10 +84,9 @@ ul.show {
 .show {
     transform: translate(0);
 }
-
-
-
-
+.espacio{
+    margin-top: auto;
+}
 #ribbon {
     background-color: rgb(11, 11, 11);
     z-index: -100;

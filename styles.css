@@ -1,32 +1,30 @@
-/*h1,*/
-/*h2,
+h1,
+h2,
 h3,
 h4,
 h5, 
-button, 
+button,
 
 /** LOGO HERBALIFE */ 
 .navbar{
-    z-index: 100;
-}
-
+    z-index: 1;
+    }
 /** MENÚ */
 .navbar {
     display: flex;
     position: fixed;
-    background-color: #f00cb769;
-    height: auto;
+    height:12vh !important;
     width: 100vw;
     align-items: stretch;
     padding: 15px;
     transition: all 0.5s ease;
     margin-top: 0.5px;
-} 
+    } 
 
 @media (min-width: 768px) {
     .menu {
         flex-direction: row;
-        justify-content: space-between;
+        justify-content:right;
         display: flex;
         }
 }

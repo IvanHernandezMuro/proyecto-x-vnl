@@ -1,59 +1,80 @@
-h1,
-h2,
-h3,
-h4,
-h5, 
-button,
-
-/** LOGO HERBALIFE */ 
-.navbar{
-    z-index: 1;
-    }
-/** MENÚ */
-.navbar {
-    display: flex;
-    position: fixed;
-    height:12vh !important;
-    width: 100vw;
-    align-items: stretch;
-    padding: 15px;
-    transition: all 0.5s ease;
-    margin-top: 0.5px;
-    } 
-
 @media (min-width: 768px) {
     .menu {
         flex-direction: row;
-        justify-content:right;
+        justify-content:center;
         display: flex;
-        }
+        } 
+
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 16px;
+    font-family: 'Bungee Spice', cursive;
+    font-family: 'Roboto Mono', monospace;
 }
 
-/*** EFECTOS navbar-nav BOTON HAMBURGUESA ***/
-.navbar-nav {
-    list-style: none;
+/** LOGO HERBALIFE*/
+.nav-brand{
+    position:absolute;
+    z-index: 10;
+    }
+.container-fluid{
+    padding: 1rem;
     display: flex;
-    font-size: 5px;
-    color: white;
+    justify-content: space-around;
+}
+/** MENÚ */
+.navegacion-principal{
+    padding: 1rem;
+    display:list-item;
+    justify-content: space-around;
+}
+
+.navbar {
+    z-index: 10;
+    position: fixed;
+    height:17vh;
+    width: 100vw;
+    align-items:stretch;
+    justify-content:right;
+    transition: all 0.15s ease;
+    -webkit-transition: all 0.15s ease;
+    -moz-transition: all 0.15s ease;
+    -ms-transition: all 0.15s ease;
+    -o-transition: all 0.15s ease;
+} 
+
+/*** EFECTOS MENU navegador extendido ***/
+.navbar-nav {
+    display:flex;
+    justify-content: space-around;
+    font-size: 5rem;
+    font-family: 'Bungee Spice', cursive;
     
-}
+    }
+
 .navbar-nav li {
-    border-radius: 3px;
-    list-style: none;
-    margin: 0 5px;
-}
+    border-radius: 30px;
+    list-style:circle;
+    margin: 0 50px;
+    justify-content: center;
+    -webkit-border-radius: 3000px;
+    -moz-border-radius: 3000px;
+    -ms-border-radius: 3000px;
+    -o-border-radius: 3000px;
+} 
 
 /*! Item normal*/
 
 .navbar-nav li a {
-    padding: 7px 13px;
+    padding: 7px 7px;
     color: rgb(246, 180, 0);
-    text-decoration: none;
+    text-decoration:#EE5A24;
     text-transform: uppercase;
-    font-size: 25px;
     display: block;
-    font-weight: bold;
-}
+    justify-content:right;
+} 
 
 /*! menu cuando le pasas el mause */
 
@@ -61,26 +82,31 @@ button,
     padding: 5px 10px;
     color: #EE5A24;
     border-radius: 15px;
-    -webkit-border-radius:;
-    -moz-border-radius:;
-    -ms-border-radius:;
-    -o-border-radius:;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
 }
 
 .btn_menu {
-    margin-right: 30px;
-    font-size: 25px;
+    margin-right: 2px;
+    font-size: 10rem;
     color: #f36f01;
     cursor: pointer;
     display: none;
+    justify-content: center;
 }
 
 ul.show {
     top: 30px;
-}
+    }
 
 .show {
     transform: translate(0);
+    -webkit-transform: translate(0);
+    -moz-transform: translate(0);
+    -ms-transform: translate(0);
+    -o-transform: translate(0);
 }
 .espacio{
     margin-top: auto;
@@ -91,7 +117,7 @@ ul.show {
 }
 
 #ribbon::after {
-    content: '';
+    content:icon;
     background-color: transparent;
     display: block;
     height: 20px;

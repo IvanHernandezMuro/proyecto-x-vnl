@@ -4128,7 +4128,7 @@ textarea.form-control-lg {
     display: none;
   }
   .navbar-expand-sm .offcanvas {
-    position: inherit;
+    position:inherit;
     bottom: 0;
     z-index: 1000;
     flex-grow: 1;

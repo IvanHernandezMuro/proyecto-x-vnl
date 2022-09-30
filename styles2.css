@@ -1,0 +1,108 @@
+h1,
+h2,
+h3,
+h4,
+h5, 
+button,
+
+/** LOGO HERBALIFE
+/*.navbar{
+    z-index: 1; 
+} */
+
+/** Logo muHerbalife
+/*.nav-brand{
+    position:absolute;
+
+} */
+
+/** MENÚ */
+.navbar {
+    z-index: 10;
+    display: flex;
+    position: fixed;
+    height:17vh;
+    width: 100vw;
+    align-items:stretch;
+    justify-content:right;
+    transition: all 0.15s ease;
+    -webkit-transition: all 0.15s ease;
+    -moz-transition: all 0.15s ease;
+    -ms-transition: all 0.15s ease;
+    -o-transition: all 0.15s ease;
+} 
+
+@media (min-width: 768px) {
+    .menu {
+        flex-direction: row;
+        justify-content:center;
+        display: flex;
+    } 
+
+/*** EFECTOS navbar-nav BOTON HAMBURGUESA ***/
+.navbar-nav {
+    list-style: circle;
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+    }
+/*.navbar-nav li {
+    border-radius: 30px;
+    list-style:circle;
+    margin: 0 50px;
+    justify-content: center;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+} */
+
+/** Item normal*/
+
+.navbar-nav li a {
+    padding: 7px 7px;
+    color: rgb(246, 180, 0);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    display: block;
+    font-weight: bold;
+    justify-content: center;
+} 
+
+/** menu cuando le pasas el mause */
+
+.nav-link li a:hover{
+    padding: 5px 10px;
+    color: #EE5A24;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+.btn_menu {
+    margin-right: 20px;
+    font-size: 25px;
+    color: #f36f01;
+    cursor: pointer;
+    display: none;
+    justify-content: center;
+}
+
+ul.show {
+    top: 30px;
+}
+
+.show {
+    transform: translate(0);
+    -webkit-transform: translate(0);
+    -moz-transform: translate(0);
+    -ms-transform: translate(0);
+    -o-transform: translate(0);
+}
+.espacio{
+    margin-top: auto;
+}
+
